@@ -1,1 +1,33 @@
+/* Logo */
+.logo-path-g1 {
+  fill: var(--logo-g1);
+}
 
+.logo-path-g2 {
+  fill: var(--logo-g2);
+}
+
+/* Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.6rem;
+  background-color: var(--background-color);
+}
+
+.nav-logo {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 2.6rem;
+}
+
+.nav-links li a {
+  font-size: 1.8rem;
+}

@@ -38,6 +38,7 @@
 }
 
 * {
+  font-family: var(--text-font);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -50,8 +51,23 @@ html {
 }
 
 body {
-  font-family: var(--font-primary);
   line-height: 1;
-  font-weight: var(--font-weight-normal);
-  color: var(--txt-main);
+  font-weight: 400;
+  color: var(--text-color);
+}
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+}
+
+ul {
+  list-style: none;
 }
