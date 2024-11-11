@@ -9,16 +9,21 @@
 
 /* Navigation */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height); /* Use your variable for header height */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2.6rem;
-  background-color: var(--background-color);
+  padding: 0 4.8rem;
+  z-index: 10;
 }
 
 .nav-logo {
-  width: 5.5rem;
-  height: 5.5rem;
+  width: var(--nav-logo-height);
+  height: var(--nav-logo-height);
 }
 
 .nav-links {
@@ -29,5 +34,52 @@ header {
 }
 
 .nav-links li a {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+}
+
+/* Landing / Hero */
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* .landing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+/* .landing div:first-of-type {
+} */
+.landing-logo {
+  width: var(--landing-logo);
+  height: calc(var(--landing-logo) * (319 / 418));
+  max-width: var(--landing-logo-max);
+  max-height: calc(var(--landing-logo-max) * (319 / 418));
+  text-align: center;
+  margin-bottom: 2.4rem;
+  /* margin-top: -2.4rem; */
+}
+.landing h1 {
+  font-size: 3.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.landing p {
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.landing a {
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
 }
