@@ -1,0 +1,57 @@
+/* 
+#3A404C
+#5B8DEF
+#E7EBF7
+#FB6566
+
+#D0DAF4
+*/
+@font-face {
+  font-family: "Frutiger-Regular";
+  src: url(../assets/fonts/Frutiger.woff);
+}
+
+@font-face {
+  font-family: "RidleyGrotesk-Regular";
+  src: url(../assets/fonts/RidleyGrotesk-Regular.woff);
+}
+
+:root {
+  /* Primary Colors */
+  --text-color: #3a404c;
+  --action-color: #fb6566;
+
+  /* Background Colors */
+  --background-color: #e7ebf7;
+
+  /* Accent Colors */
+  --accent-color-main: #5b8def;
+  --accent-color-secondary: #d0daf4;
+
+  /* Logo Color */
+  --logo-g1: var(--action-color);
+  --logo-g2: var(--text-color);
+
+  /*Text / Heading Font */
+  --text-font: "Frutiger-Regular", sans-serif;
+  --heading-font: "RidleyGrotesk-Regular", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1;
+  font-weight: var(--font-weight-normal);
+  color: var(--txt-main);
+}
