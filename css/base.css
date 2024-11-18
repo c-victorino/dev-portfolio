@@ -64,9 +64,13 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+span {
   /* text-wrap: balance; */
   font-family: var(--heading-font);
+}
+
+h1 {
   font-weight: bold;
 }
 
@@ -79,4 +83,8 @@ a {
 
 ul {
   list-style: none;
+}
+
+.primary-highlight {
+  color: var(--action-color);
 }

@@ -1,0 +1,6 @@
+@media only screen and (max-height: 700px) {
+  .landing {
+    height: auto;
+    padding-top: var(--nav-height);
+  }
+}
