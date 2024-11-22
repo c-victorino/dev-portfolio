@@ -5,6 +5,12 @@
 #FB6566
 
 #D0DAF4
+
+   10 12 14 16 18 20 24 30
+  36 44 52 62 74 86 98 
+
+   2 4 8 12 16 24 32 48 64
+  80 96 128 
 */
 @font-face {
   font-family: "Frutiger-Regular";
@@ -36,11 +42,14 @@
   --text-font: "Frutiger-Regular", sans-serif;
   --heading-font: "RidleyGrotesk-Regular", sans-serif;
 
+  /* Font Size */
+  --text-sz-default: 1.8rem;
+
   /* Dimension */
-  --nav-height: 10rem;
+  --nav-height: 9rem;
   --nav-logo-height: 5.8rem;
   --landing-logo: 45vw;
-  --landing-logo-max: 40rem;
+  --landing-logo-max: 36rem;
 }
 
 * {
@@ -62,16 +71,35 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
 }
+
+main {
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+  /* padding: 0 14rem; */
+  margin: 0 auto;
+}
+
+section {
+  max-width: 1280px;
+  /* margin: 0 auto; */
+  margin: 0 14rem;
+}
+
 h1,
 h2,
 h3,
 span {
-  /* text-wrap: balance; */
   font-family: var(--heading-font);
 }
 
 h1 {
+  font-size: 3.4rem;
   font-weight: bold;
+}
+
+p {
+  font-size: var(--text-sz-default);
 }
 
 a {
@@ -83,8 +111,4 @@ a {
 
 ul {
   list-style: none;
-}
-
-.primary-highlight {
-  color: var(--action-color);
 }

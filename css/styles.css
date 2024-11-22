@@ -13,40 +13,42 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
+
   height: var(--nav-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2.2rem;
-  z-index: 10;
+  padding: 0 5rem;
+  z-index: 1000;
   backdrop-filter: blur(10px);
+  box-sizing: border-box;
+
+  font-size: 1.6rem;
 }
 
-.nav-logo {
+.header-logo {
   width: var(--nav-logo-height);
   height: var(--nav-logo-height);
 }
 
-.nav-links {
+.header-nav-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 2.6rem;
 }
 
-.nav-links li a {
-  font-size: 1.6rem;
-}
-
+/* Side */
 /*** Left and Right fixed position ***/
 .left-side {
-  width: 40px;
+  width: 30px;
   position: fixed;
   bottom: 0px;
   left: 2rem;
   right: auto;
   writing-mode: vertical-lr;
-  font-size: 1.8rem;
+
   letter-spacing: 1.5px;
   transform: rotate(180deg);
   text-align: center;
@@ -55,6 +57,7 @@ header {
 
 .left-side p {
   padding-left: 2px;
+  font-size: 1.6rem;
 }
 
 .container-side-l {
@@ -77,9 +80,9 @@ header {
 
 .left-side::before {
   position: fixed;
-  bottom: 0px;
-  left: auto;
-  right: -40px;
+  bottom: -10px;
+  left: -30px;
+  right: auto;
   z-index: -1;
   content: "";
   width: 10rem;
@@ -90,18 +93,18 @@ header {
 
 /* Right */
 .right-side {
-  /* width: 40px; */
+  width: 40px;
   position: fixed;
   bottom: 0px;
   left: auto;
-  right: 3.6rem;
+  right: 2rem;
   z-index: 9;
 }
 .container-side-r {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5.8rem;
+  gap: 5.7rem;
 }
 
 .container-side-r::after {
@@ -113,40 +116,37 @@ header {
 }
 
 .side-nav-icon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.2rem;
+  height: 2.2rem;
 }
 
-/*** Landing / Hero ***/
+/* Landing */
 .landing {
-  min-height: 100vh;
-  display: flex;
-  padding-bottom: 2rem;
-}
-
-.landing div:first-of-type {
-  text-align: center;
+  height: 100vh;
 }
 
 .landing-logo {
   width: var(--landing-logo);
+  /* Maintain the aspect ratio (319:418) based on the SVG viewBox dimensions */
   height: calc(var(--landing-logo) * (319 / 418));
+
+  /* Limit to avoid scaling too large */
   max-width: var(--landing-logo-max);
+  /* Maintain aspect ratio for max height as well */
   max-height: calc(var(--landing-logo-max) * (319 / 418));
-  text-align: center;
+
   margin-bottom: 2.4rem;
 }
 
 .landing h1 {
-  font-size: 3.6rem;
   margin-bottom: 1.6rem;
 }
 
 .landing p {
-  font-size: 2rem;
   margin-bottom: 2.4rem;
   line-height: 1.2;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .landing a {
