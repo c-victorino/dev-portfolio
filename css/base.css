@@ -98,6 +98,14 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
 p {
   font-size: var(--text-sz-default);
 }

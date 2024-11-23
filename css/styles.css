@@ -79,16 +79,15 @@ header {
 }
 
 .left-side::before {
-  position: fixed;
-  bottom: -10px;
-  left: -30px;
-  right: auto;
-  z-index: -1;
   content: "";
+  position: fixed;
+  bottom: -24px;
+  left: -14px;
+  z-index: -1;
   width: 10rem;
   height: 22rem;
   background-color: var(--accent-color-secondary);
-  margin-bottom: -1.4rem;
+  opacity: 0.85;
 }
 
 /* Right */
@@ -123,6 +122,8 @@ header {
 /* Landing */
 .landing {
   height: 100vh;
+  text-align: center;
+  margin-bottom: 16rem;
 }
 
 .landing-logo {
@@ -146,11 +147,27 @@ header {
   margin-bottom: 2.4rem;
   line-height: 1.2;
   letter-spacing: 0.5px;
-  text-align: center;
 }
 
 .landing a {
   font-size: 2rem;
   line-height: 1.2;
   letter-spacing: 0.5px;
+}
+
+/* About */
+.about-heading {
+  display: flex; /* Aligns content horizontally */
+  align-items: center; /* Vertically centers the text and line */
+}
+
+.about-heading::after {
+  content: ""; /* Required for pseudo-elements */
+  flex-grow: 1; /* Fills remaining horizontal space */
+  height: 1px; /* Line thickness */
+  background-color: var(--text-color); /* Line color (adjust as needed) */
+  margin-left: 1.2rem;
+}
+.user-img {
+  width: 30%;
 }

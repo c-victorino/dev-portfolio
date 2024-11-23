@@ -2,6 +2,10 @@
   color: var(--action-color);
 }
 
+.accent-main {
+  color: var(--accent-color-main);
+}
+
 .no-display {
   display: none;
 }
