@@ -39,6 +39,14 @@ header {
   gap: 2.6rem;
 }
 
+.header-hamburger {
+  width: 3.8rem;
+}
+
+.hamburger-item {
+  display: none;
+}
+
 /* Side */
 /*** Left and Right fixed position ***/
 .left-side {
@@ -114,7 +122,7 @@ header {
   background-color: var(--text-color);
 }
 
-.side-nav-icon {
+.social-link {
   width: 2.2rem;
   height: 2.2rem;
 }
@@ -153,6 +161,38 @@ header {
   font-size: 2rem;
   line-height: 1.2;
   letter-spacing: 0.5px;
+}
+
+.btn-landing {
+  border: 1px solid var(--action-color);
+  border-radius: 10px;
+  transition: all 0.3s;
+  padding: 0.7rem 1.2rem;
+  color: var(--action-color);
+}
+
+.btn-landing:link,
+.btn-landing:visited {
+  color: var(--action-color);
+  fill: var(--action-color);
+}
+
+.btn-landing:hover,
+.btn-landing:active {
+  color: var(--background-color);
+  background-color: var(--action-color);
+}
+
+.landing-social {
+  display: none;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+  margin-top: 2.8rem;
 }
 
 /* About */

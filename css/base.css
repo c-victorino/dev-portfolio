@@ -94,7 +94,7 @@ span {
 }
 
 h1 {
-  font-size: 3.4rem;
+  font-size: 3.6rem;
   font-weight: bold;
 }
 
@@ -111,10 +111,12 @@ p {
 }
 
 a {
+  display: inline-block;
   font-family: var(--text-font);
   text-decoration: none;
   color: inherit;
   background: none;
+  cursor: pointer;
 }
 
 ul {
