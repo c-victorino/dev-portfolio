@@ -16,3 +16,7 @@
   align-items: center;
   justify-content: center;
 }
+
+.txt-center {
+  text-align: center;
+}

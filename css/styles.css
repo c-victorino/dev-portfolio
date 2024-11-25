@@ -157,17 +157,63 @@ header {
 
 /* About */
 .about-heading {
-  display: flex; /* Aligns content horizontally */
-  align-items: center; /* Vertically centers the text and line */
+  width: 100%;
+  margin-bottom: 10rem;
+  display: flex;
+  align-items: center;
 }
 
 .about-heading::after {
-  content: ""; /* Required for pseudo-elements */
-  flex-grow: 1; /* Fills remaining horizontal space */
-  height: 1px; /* Line thickness */
-  background-color: var(--text-color); /* Line color (adjust as needed) */
-  margin-left: 1.2rem;
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--text-color);
 }
+
 .user-img {
-  width: 30%;
+  width: 100%;
+  max-width: 22rem;
+  object-fit: cover;
+  /* margin: 0 auto; */
+  justify-self: center;
+}
+
+.about-details-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  place-items: center;
+  max-width: 120rem;
+  /* max-width: 100%; */
+  padding: 0 5rem;
+  margin: 0 auto;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.ts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 1rem;
+  max-width: 120;
+  max-width: 100%;
+  padding: 0 5rem;
+  margin: 0 auto;
+}
+
+.ts-container li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(var(--accent-color-main), 0.5);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
 }

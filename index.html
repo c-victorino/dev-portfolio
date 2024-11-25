@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/queries.css" />
+
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/utilities.css " />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
     <title>Document</title>
   </head>
   <body>
@@ -77,54 +78,62 @@
       </section>
 
       <section class="about">
-        <h2 class="about-heading">
+        <!-- <h2 class="about-heading">
           <span class="primary-highlight">#</span>Who am I?
-        </h2>
-        <img
-          class="user-img"
-          src="./assets/images/carlo-victorino.png"
-          alt="Head shot picture of Carlo V."
-        />
+        </h2> -->
 
-        <p>
-          I am an aspiring front-end developer with a diploma in computer
-          programming and a background in the construction industry. I have
-          shifted from construction to focus on developing my skills in web
-          development and design through formal education and personal projects,
-          driven by a commitment to continuous learning.
-        </p>
+        <div class="about-details-container">
+          <img
+            class="user-img"
+            src="./assets/images/carlo-victorino.png"
+            alt="Head shot picture of Carlo V."
+          />
+
+          <p class="user-txt">
+            I am an aspiring front-end developer with a diploma in computer
+            programming and a background in the construction industry. I have
+            shifted from construction to focus on developing my skills in web
+            development and design through formal education and personal
+            projects, driven by a commitment to continuous learning.
+          </p>
+        </div>
 
         <div>
-          <h3 class="accent-main">[Technical Skills]</h3>
+          <h3 class="accent-main txt-center">[Technical Skills]</h3>
           <ul class="ts-container">
             <li>
-              <svg>
+              <svg class="icon">
                 <use href="#svg-js"></use>
               </svg>
+              <p>JavaScript</p>
             </li>
             <li>
-              <svg>
+              <svg class="icon">
                 <use href="#svg-html"></use>
               </svg>
+              <p>HTML</p>
             </li>
             <li>
-              <svg>
+              <svg class="icon">
                 <use href="#svg-css"></use>
               </svg>
+              <p>CSS</p>
             </li>
             <li>
-              <svg>
+              <svg class="icon">
                 <use href="#svg-git"></use>
               </svg>
+              <p>Git</p>
             </li>
             <li>
-              <svg>
+              <svg class="icon">
                 <use href="#svg-figma"></use>
               </svg>
+              <p>Figma</p>
             </li>
           </ul>
 
-          <h3 class="accent-main">[Education]</h3>
+          <h3 class="accent-main txt-center">[Education]</h3>
           <div></div>
         </div>
       </section>

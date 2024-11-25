@@ -4,3 +4,17 @@
     padding-top: var(--nav-height);
   }
 }
+
+/* 
+1600
+1440
+1024
+768
+480 / 360
+ */
+
+@media (max-width: 1024px) {
+  .about-details-container {
+    grid-template-columns: 1fr; /* Switch to a single column */
+  }
+}
