@@ -23,6 +23,10 @@
 }
 
 :root {
+  /* Color */
+  --dark: #3a404c;
+  --light: #e7ebf7;
+
   /* Primary Colors */
   --text-color: #3a404c;
   --action-color: #fb6566;
@@ -53,6 +57,11 @@
   --landing-logo-max: 36rem;
 }
 
+[data-theme="dark"] {
+  --background-color: var(--dark);
+  --text-color: var(--light);
+}
+
 * {
   font-family: var(--text-font);
   padding: 0;
@@ -71,6 +80,13 @@ body {
   font-weight: 400;
   color: var(--text-color);
   background-color: var(--background-color);
+}
+
+html,
+body,
+svg {
+  transition: background-color 0.5s ease-in-out, color 0.7s ease-in-out,
+    fill 0.7s ease-in-out;
 }
 
 main {

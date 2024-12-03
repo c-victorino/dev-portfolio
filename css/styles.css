@@ -27,6 +27,15 @@ header {
   font-size: 1.6rem;
 }
 
+.header-logo-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+}
+
 .header-logo {
   width: var(--nav-logo-height);
   height: var(--nav-logo-height);
@@ -66,6 +75,7 @@ header {
 .left-side p {
   padding-left: 2px;
   font-size: 1.6rem;
+  color: var(--dark);
 }
 
 .container-side-l {
@@ -95,7 +105,7 @@ header {
   width: 10rem;
   height: 22rem;
   background-color: var(--accent-color-secondary);
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 /* Right */
@@ -125,6 +135,7 @@ header {
 .social-link {
   width: 2.2rem;
   height: 2.2rem;
+  fill: var(--text-color);
 }
 
 /* Landing */
@@ -356,4 +367,5 @@ header {
 .social-icon svg {
   width: 3rem;
   height: 3rem;
+  fill: var(--text-color);
 }
