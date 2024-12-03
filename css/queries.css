@@ -18,6 +18,11 @@
   .right-side {
     right: 1rem;
   }
+
+  /* About */
+  .about-details-container {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -47,6 +52,10 @@
     width: 2.8rem;
     height: 2.8rem;
   }
+
+  .about-details-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -73,4 +82,16 @@
 }
 
 @media only screen and (max-width: 320px) {
+  :root {
+    --text-sz-default: 1.6rem;
+  }
+
+  .icon {
+    width: 4.4rem;
+    height: 4.4rem;
+  }
+
+  .ts-container li {
+    width: auto;
+  }
 }
