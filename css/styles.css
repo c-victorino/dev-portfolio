@@ -196,6 +196,9 @@ header {
 }
 
 /* About */
+.about {
+  margin-bottom: 16rem;
+}
 .about h3 {
   margin-bottom: 2rem;
 }
@@ -292,4 +295,65 @@ header {
 
 .institution-name {
   margin-bottom: 1.2rem;
+}
+
+/* Contact */
+.contact-svg {
+  width: 10rem;
+  aspect-ratio: 130 / 388;
+  fill: var(--text-color);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  /* padding: 20px;
+  border: 1px solid #000;
+  max-width: 100vw; */
+  height: 100vh;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-heading {
+  margin-bottom: 2rem;
+  color: var(--action-color);
+}
+
+.contact-content p {
+  line-height: 1.2;
+  font-size: var(--text-sz-large);
+  margin-bottom: 2rem;
+}
+
+.contact-content span {
+  color: var(--accent-color-main);
+}
+
+.left-svg {
+  grid-column: 1;
+}
+
+.right-svg {
+  grid-column: 3;
+}
+
+/* COntact Social */
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.social-icon svg {
+  width: 3rem;
+  height: 3rem;
 }
