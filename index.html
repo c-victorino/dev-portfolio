@@ -11,13 +11,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <!-- <a href="#"
-        ><svg class="header-logo">
-          <use href="#logo"></use>
-        </svg>
-      </a> -->
-
+    <header class="header section-anim">
       <button
         id="dark-mode-toggle"
         class="header-logo-btn"
@@ -27,21 +21,20 @@
           <use href="#logo"></use>
         </svg>
       </button>
-
-      <nav>
-        <ul class="header-nav-list">
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Contact</a></li>
-          <li class="hamburger-item">
-            <a href="#"
-              ><svg class="header-hamburger">
-                <use href="#hamburger"></use>
-              </svg>
-            </a>
-          </li>
+      <nav class="navigation">
+        <ul class="nav-link-list">
+          <li><a class="resume btn-nav" href="#">Resume</a></li>
+          <li><a href="#home" class="btn-nav">Home</a></li>
+          <li><a href="#about" class="btn-nav">About</a></li>
+          <li><a href="#project" class="btn-nav">Project</a></li>
+          <li><a href="#contact" class="btn-landing">Contact</a></li>
         </ul>
+
+        <a class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </a>
       </nav>
     </header>
 
@@ -419,6 +412,7 @@
       <!-- <svg xmlns="http://www.w3.org/2000/svg"></svg> -->
       <!-- <svg xmlns="http://www.w3.org/2000/svg"></svg> -->
     </section>
+    <div class="overlay"></div>
 
     <script src="./scripts/script.js"></script>
   </body>

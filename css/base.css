@@ -27,6 +27,9 @@
   --dark: #3a404c;
   --light: #e7ebf7;
 
+  --dark-menu: #252830;
+  --light-menu: #e7ebf7;
+
   /* Primary Colors */
   --text-color: #3a404c;
   --action-color: #fb6566;
@@ -37,6 +40,9 @@
   /* Accent Colors */
   --accent-color-main: #5b8def;
   --accent-color-secondary: #d0daf4;
+
+  /* Menu Mobile BG */
+  --mobile-menu-bg: #d0daf4;
 
   /* Logo Color */
   --logo-g1: var(--action-color);
@@ -60,6 +66,7 @@
 [data-theme="dark"] {
   --background-color: var(--dark);
   --text-color: var(--light);
+  --mobile-menu-bg: var(--dark-menu);
 }
 
 * {
@@ -87,6 +94,10 @@ body,
 svg {
   transition: background-color 0.5s ease-in-out, color 0.7s ease-in-out,
     fill 0.7s ease-in-out;
+}
+
+header {
+  transition: transform 0.3s ease;
 }
 
 main {
