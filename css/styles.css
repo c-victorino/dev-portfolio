@@ -87,6 +87,44 @@
   height: var(--nav-logo-height);
 }
 
+/* Section Animation */
+.section-anim {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateY(15px);
+  transition: all 0.75s;
+}
+
+.section-anim.show {
+  transform: translateY(0);
+  opacity: 1;
+  filter: blur(0px);
+}
+
+.btn-nav {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-nav:link,
+.btn-nav:visited {
+  color: var(--text-color);
+}
+
+/* .resume.btn-nav:link,
+.resume.btn-nav:visited {
+  color: var(#a6ebc9);
+} */
+
+.btn-nav:hover,
+.btn-nav:active,
+.btn-nav:hover:hover,
+.btn-nav:hover:active {
+  color: var(--action-color);
+}
+
 /* Side */
 /*** Left and Right fixed position ***/
 .left-side {
