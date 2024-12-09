@@ -48,17 +48,6 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* Usable Grid */
-.grid {
-  display: grid;
-  column-gap: 6rem;
-  row-gap: 8rem;
-}
-
-.grid-col-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
 /* Usable Buttons */
 .btn-standard,
 .btn-landing {
