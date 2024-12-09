@@ -1,27 +1,7 @@
-.primary-highlight {
-  color: var(--action-color);
-}
-
-.accent-main {
-  color: var(--color-text-accent);
-}
-
 .no-display {
   display: none;
 }
 
-.flex-center-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.txt-center {
-  text-align: center;
-}
-
-/*  */
 .text-center {
   text-align: center;
 }
@@ -111,7 +91,6 @@
 
 .btn-nav:link,
 .btn-nav:visited {
-  /* color: #f1dfe1; */
   color: var(--color-text);
 }
 
@@ -161,7 +140,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  /* color: #f1dfe1; */
   color: var(--color-text);
 }
 
