@@ -49,8 +49,8 @@
   --logo-g2: var(--text-color);
 
   /*Text / Heading Font */
-  --text-font: "Frutiger-Regular", sans-serif;
-  --heading-font: "RidleyGrotesk-Regular", sans-serif;
+  /* --text-font: "Frutiger-Regular", sans-serif; */
+  /* --heading-font: "RidleyGrotesk-Regular", sans-serif; */
 
   /* Font Size */
   --text-sz-default: 1.8rem;
@@ -61,6 +61,20 @@
   --nav-logo-height: 5.8rem;
   --landing-logo: 45vw;
   --landing-logo-max: 36rem;
+
+  /* Color */
+  --color-primary: #e7ebf7;
+  --color-primary-dark: #e7ebf7;
+  --color-primary-transparent: rgba(231, 235, 247, 0.948) 7;
+  --color-text: #3a404c;
+  --color-text-accent: #5b8def;
+  --color-accent: #fb6566;
+
+  /* Font & Font Size */
+  --font-primary: "Montserrat", sans-serif;
+  --txt-sz-sml: 1.2rem;
+  --txt-sz-reg: 1.6rem;
+  --txt-sz-lrg: 2rem;
 }
 
 [data-theme="dark"] {
@@ -70,7 +84,7 @@
 }
 
 * {
-  font-family: var(--text-font);
+  font-family: var(--font-primary);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -88,41 +102,42 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
 }
+p span {
+  color: var(--color-text-accent);
+}
 
-html,
+strong {
+  font-weight: 500;
+}
+
+/* html,
 body,
 svg {
   transition: background-color 0.5s ease-in-out, color 0.7s ease-in-out,
     fill 0.7s ease-in-out;
-}
+} */
 
-header {
-  transition: transform 0.3s ease;
-}
-
-main {
+/* main {
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  /* padding: 0 14rem; */
   margin: 0 auto;
-}
+} */
 
-section {
+/* section {
   max-width: 1280px;
-  /* margin: 0 auto; */
-  margin: 0 14rem;
-}
 
-h1,
+  margin: 0 14rem;
+} */
+
+/* h1,
 h2,
 h3,
 span {
   font-family: var(--heading-font);
-}
+} */
 
-h1 {
-  /* font-size: 3.6rem; */
+/* h1 {
   font-size: 4rem;
   font-weight: bold;
 }
@@ -133,20 +148,20 @@ h2 {
 
 h3 {
   font-size: 3rem;
-}
+} */
 
-p {
+/* p {
   font-size: var(--text-sz-default);
-}
+} */
 
-a {
+/* a {
   display: inline-block;
   font-family: var(--text-font);
   text-decoration: none;
   color: inherit;
   background: none;
   cursor: pointer;
-}
+} */
 
 ul {
   list-style: none;

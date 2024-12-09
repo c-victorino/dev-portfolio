@@ -20,3 +20,30 @@
 .txt-center {
   text-align: center;
 }
+
+/*  */
+.text-center {
+  text-align: center;
+}
+
+.color-accent {
+  color: var(--color-accent);
+}
+
+.container {
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8rem;
+}
+
+/* Usable Grid */
+.grid {
+  display: grid;
+  column-gap: 6rem;
+  row-gap: 8rem;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
