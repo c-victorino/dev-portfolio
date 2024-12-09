@@ -47,3 +47,131 @@
 .grid-col-2 {
   grid-template-columns: repeat(2, 1fr);
 }
+
+/* Usable Grid */
+.grid {
+  display: grid;
+  column-gap: 6rem;
+  row-gap: 8rem;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Usable Buttons */
+.btn-standard,
+.btn-landing {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  border: 1px solid var(--color-accent);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn-standard:link,
+.btn-standard:visited,
+.btn-landing:link,
+.btn-landing:visited {
+  color: var(--color-accent);
+  fill: var(--color-accent);
+}
+
+.btn-standard:hover,
+.btn-standard:active {
+  background-color: var(--color-accent);
+  fill: var(--color-primary-dark);
+  color: var(--color-primary-dark);
+  font-weight: 700;
+}
+
+.btn-landing:hover,
+.btn-landing:active {
+  color: var(--color-text);
+  background-color: var(--color-accent);
+  font-weight: 700;
+}
+
+.btn-nav {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-nav:link,
+.btn-nav:visited {
+  /* color: #f1dfe1; */
+  color: var(--color-text);
+}
+
+.resume.btn-nav:link,
+.resume.btn-nav:visited {
+  color: var(--color-text-accent);
+}
+
+.btn-nav:hover,
+.btn-nav:active,
+.btn-nav:hover:hover,
+.btn-nav:hover:active {
+  color: var(--color-accent);
+}
+
+/* Usable Headings */
+.primary-heading,
+.secondary-heading,
+.tertiary-heading {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.primary-heading {
+  white-space: nowrap;
+  font-size: clamp(4.4rem, 5vw, 7.4rem);
+}
+
+.secondary-heading {
+  font-weight: 600;
+  font-size: 4rem;
+  padding: 4rem 0;
+}
+
+.tertiary-heading {
+  font-weight: 500;
+  color: var(--color-text-accent);
+  font-size: 2.4rem;
+  margin: 4rem 0;
+}
+
+/* Text Logo  {CV}; */
+.header-text-logo,
+.hero-text-logo {
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* color: #f1dfe1; */
+  color: var(--color-text);
+}
+
+.background-color {
+  background-color: #143f60;
+  opacity: 0.9;
+}
+
+/* Section Animation */
+.section-anim {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateY(15px);
+  transition: all 0.75s;
+}
+
+.section-anim.show {
+  transform: translateY(0);
+  opacity: 1;
+  filter: blur(0px);
+}
