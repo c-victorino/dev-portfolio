@@ -270,3 +270,9 @@
 .contact-icons .btn-contact {
   margin: 4rem 2rem 0 2rem;
 }
+
+/* Footer */
+footer {
+  font-size: var(--txt-sz-sml);
+  margin-bottom: 2rem;
+}
