@@ -3,7 +3,7 @@
 }
 
 .accent-main {
-  color: var(--accent-color-main);
+  color: var(--color-text-accent);
 }
 
 .no-display {
@@ -27,7 +27,7 @@
 }
 
 .color-accent {
-  color: var(--color-accent);
+  color: var(--color-action);
 }
 
 .container {
@@ -56,32 +56,32 @@
   text-decoration: none;
   cursor: pointer;
   font-weight: 500;
-  border: 1px solid var(--color-accent);
+  border: 1px solid var(--color-action);
   border-radius: 8px;
   transition: all 0.3s;
 }
 
 .btn-contact {
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--color-text);
 }
 
 .btn-contact:link,
 .btn-contact:visited {
-  color: var(--text-color);
-  fill: var(--text-color);
+  color: var(--color-text);
+  fill: var(--color-text);
 }
 
 .btn-standard:link,
 .btn-standard:visited,
 .btn-landing:link,
 .btn-landing:visited {
-  color: var(--color-accent);
-  fill: var(--color-accent);
+  color: var(--color-action);
+  fill: var(--color-action);
 }
 
 .btn-contact:hover,
 .btn-contact:active {
-  background-color: var(--color-accent);
+  background-color: var(--color-action);
   fill: var(--color-primary-dark);
   color: var(--color-primary-dark);
   font-weight: 700;
@@ -89,7 +89,7 @@
 
 .btn-standard:hover,
 .btn-standard:active {
-  background-color: var(--color-accent);
+  background-color: var(--color-action);
   fill: var(--color-primary-dark);
   color: var(--color-primary-dark);
   font-weight: 700;
@@ -98,7 +98,7 @@
 .btn-landing:hover,
 .btn-landing:active {
   color: var(--color-text);
-  background-color: var(--color-accent);
+  background-color: var(--color-action);
   font-weight: 700;
 }
 
@@ -124,7 +124,7 @@
 .btn-nav:active,
 .btn-nav:hover:hover,
 .btn-nav:hover:active {
-  color: var(--color-accent);
+  color: var(--color-action);
 }
 
 /* Usable Headings */

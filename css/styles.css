@@ -20,14 +20,14 @@
   left: 0;
   z-index: 100;
   width: 100%;
-  transition: all 0.3s ease;
 
   height: var(--nav-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5rem;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
+  background-color: var(--color-background-head);
   box-sizing: border-box;
   font-size: 1.6rem;
 }
@@ -47,7 +47,7 @@
 }
 
 .line {
-  background-color: var(--text-color);
+  background-color: var(--color-text);
   width: 3rem;
   height: 0.2rem;
   margin: 0.6rem;
@@ -98,88 +98,6 @@
   transform: translateY(0);
   opacity: 1;
   filter: blur(0px);
-}
-
-/* Side */
-/*** Left and Right fixed position ***/
-.left-side {
-  width: 30px;
-  position: fixed;
-  bottom: 0px;
-  left: 2rem;
-  right: auto;
-  writing-mode: vertical-lr;
-
-  letter-spacing: 1.5px;
-  transform: rotate(180deg);
-  text-align: center;
-  z-index: 9;
-}
-
-.left-side p {
-  padding-left: 2px;
-  font-size: 1.6rem;
-  color: var(--dark);
-}
-
-.container-side-l {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  gap: 5rem;
-}
-
-/* Vertical Line Left*/
-.container-side-l::before {
-  content: "";
-  width: 1px;
-  height: 12rem;
-  margin: 0px auto;
-  background-color: var(--text-color);
-}
-
-.left-side::before {
-  content: "";
-  position: fixed;
-  bottom: -24px;
-  left: -14px;
-  z-index: -1;
-  width: 10rem;
-  height: 22rem;
-  background-color: var(--accent-color-secondary);
-  opacity: 0.8;
-}
-
-/* Right */
-.right-side {
-  width: 40px;
-  position: fixed;
-  bottom: 0px;
-  left: auto;
-  right: 2rem;
-  z-index: 9;
-}
-.container-side-r {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5.7rem;
-}
-
-.container-side-r::after {
-  content: "";
-  width: 1px;
-  height: 12rem;
-  margin: 0px auto;
-  background-color: var(--text-color);
-}
-
-.social-link {
-  width: 2.2rem;
-  height: 2.2rem;
-  fill: var(--text-color);
 }
 
 /**** Landing ****/

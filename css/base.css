@@ -5,42 +5,18 @@
 #FB6566
 
 #D0DAF4
-
-   10 12 14 16 18 20 24 30
-  36 44 52 62 74 86 98 
-
-   2 4 8 12 16 24 32 48 64
-  80 96 128 
 */
 :root {
-  /* Color */
+  /* Main Color */
   --dark: #3a404c;
   --light: #e7ebf7;
 
   --dark-menu: #252830;
-  --light-menu: #e7ebf7;
-
-  /* Primary Colors */
-  --text-color: #3a404c;
-  --action-color: #fb6566;
-
-  /* Background Colors */
-  --background-color: #e7ebf7;
-
-  /* Accent Colors */
-  --accent-color-main: #5b8def;
-  --accent-color-secondary: #d0daf4;
-
-  /* Menu Mobile BG */
-  --mobile-menu-bg: #d0daf4;
+  --light-menu: #d0daf4;
 
   /* Logo Color */
-  --logo-g1: var(--action-color);
-  --logo-g2: var(--text-color);
-
-  /* Font Size */
-  --text-sz-default: 1.8rem;
-  --text-sz-large: 2rem;
+  --logo-g1: var(--color-action);
+  --logo-g2: var(--color-text);
 
   /* Dimension */
   --nav-height: 9rem;
@@ -51,10 +27,13 @@
   /* Color */
   --color-primary: #e7ebf7;
   --color-primary-dark: #e7ebf7;
-  --color-primary-transparent: rgba(231, 235, 247, 0.948) 7;
-  --color-text: #3a404c;
+  --color-background-head: #e7ebf7f3;
+  --color-text: var(--dark);
   --color-text-accent: #5b8def;
-  --color-accent: #fb6566;
+  --color-action: #fb6566;
+
+  --color-mobile-menu: var(--light-menu);
+  --color-background: var(--light);
 
   /* Font & Font Size */
   --font-primary: "Montserrat", sans-serif;
@@ -64,9 +43,10 @@
 }
 
 [data-theme="dark"] {
-  --background-color: var(--dark);
-  --text-color: var(--light);
-  --mobile-menu-bg: var(--dark-menu);
+  --color-background: var(--dark);
+  --color-mobile-menu: var(--dark-menu);
+  --color-text: var(--light);
+  --color-background-head: #3a404cef;
 }
 
 * {
@@ -85,8 +65,19 @@ html {
 body {
   line-height: 1;
   font-weight: 400;
-  color: var(--text-color);
-  background-color: var(--background-color);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+html,
+body,
+svg {
+  transition: background-color 0.6s ease-in-out, color 0.4s ease-in-out,
+    fill 0.15s ease;
+}
+
+header {
+  transition: transform 0.3s ease;
 }
 p span {
   color: var(--color-text-accent);
