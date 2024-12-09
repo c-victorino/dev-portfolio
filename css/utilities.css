@@ -50,7 +50,8 @@
 
 /* Usable Buttons */
 .btn-standard,
-.btn-landing {
+.btn-landing,
+.btn-contact {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
@@ -60,12 +61,30 @@
   transition: all 0.3s;
 }
 
+.btn-contact {
+  border: 1px solid var(--text-color);
+}
+
+.btn-contact:link,
+.btn-contact:visited {
+  color: var(--text-color);
+  fill: var(--text-color);
+}
+
 .btn-standard:link,
 .btn-standard:visited,
 .btn-landing:link,
 .btn-landing:visited {
   color: var(--color-accent);
   fill: var(--color-accent);
+}
+
+.btn-contact:hover,
+.btn-contact:active {
+  background-color: var(--color-accent);
+  fill: var(--color-primary-dark);
+  color: var(--color-primary-dark);
+  font-weight: 700;
 }
 
 .btn-standard:hover,

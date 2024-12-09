@@ -324,64 +324,31 @@
   font-size: var(--txt-sz-reg);
   line-height: 1.6;
 }
-
 /* Contact */
-.contact-svg {
-  width: 10rem;
-  aspect-ratio: 130 / 388;
-  fill: var(--text-color);
-}
-
-.contact-container {
-  display: grid;
-  grid-template-columns: 2fr 8fr 2fr;
-  align-items: center;
-  justify-items: center;
-  position: relative;
-  height: 100vh;
-}
-
-.contact-content {
+.contact {
+  min-height: 95vh;
+  min-height: 95svh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
-.contact-heading {
-  margin-bottom: 2rem;
-  color: var(--action-color);
+.contact h2 {
+  font-size: clamp(4.4rem, 8vw, 7.4rem);
 }
 
-.contact-content p {
-  line-height: 1.2;
-  font-size: var(--text-sz-large);
-  margin-bottom: 2rem;
+.contact p {
+  font-size: var(--txt-sz-lrg);
+  line-height: 1.6;
+  max-width: 55ch;
 }
 
-.contact-content span {
-  color: var(--accent-color-main);
+.contact-icons svg {
+  width: 5.5rem;
+  padding: 1rem;
 }
 
-.left-svg {
-  grid-column: 1;
+.contact-icons .btn-contact {
+  margin: 4rem 2rem 0 2rem;
 }
-
-.right-svg {
-  grid-column: 3;
-}
-
-/* COntact Social */
-.social-icons {
-  list-style: none;
-  display: flex;
-  gap: 4rem;
-}
-
-.social-icon svg {
-  width: 3rem;
-  height: 3rem;
-  fill: var(--text-color);
-}
-
-/* Landing */
